@@ -1,0 +1,9 @@
+#{
+class="btn btn-large disabled"
+}
+can you apply a class with a tag selector?
+
+tag selector - global across document.
+#id selector - unique across the document.
+.class selector - reuse across the doc.
+tag.class to combine both.
