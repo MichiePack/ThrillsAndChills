@@ -86,5 +86,17 @@ article footer{
     padding: 20px;
     border-top: 2px solid mediumslateblue;
 }
-
-
+#photoShow{
+    height: 400px;
+    width: 400px;
+}
+#photoShow div{
+    position: absolute;
+    z-index: 0;
+}
+#photoShow div.previous{
+    z-index:1;
+}
+#photoShow div.current{
+    z-index:2;
+}
