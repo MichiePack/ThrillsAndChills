@@ -4,7 +4,13 @@
   <meta charset="utf-8" />
      <link href="_css/main.css" rel="stylesheet" type="text/css" />
      <script type="text/javascript" src="_js/jquery/jquery-1.10.2.js"></script>
-  <title>Main Stock</title>
+     <script type="text/javascript" charset="utf-8" src="_vendor/DataTables-1.9.4/media/js/jquery.dataTables.js"></script>
+     <script type="text/javascript" src="_vendor/csvtotable/js/jquery.csvToTable.js"></script>
+     
+
+<style type="text/css" title="currentStyle">
+    @import "_vendor/DataTables-1.9.4/media/css/demo_table.css";
+</style>  <title>Main Stock</title>
 </head>
 
 <body>
@@ -19,6 +25,8 @@
     <div>
       <p id="content"></p>
     </div>
+ 
+<div id="CSVTable"></div>
 
     <footer id="the_footer">
         Copyright Stuart Pack 2013
