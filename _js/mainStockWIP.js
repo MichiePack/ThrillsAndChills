@@ -22,7 +22,8 @@
             // $('#CSVTable').find('TABLE').dataTable();
         // });;
 
-         $('#CSVTable').CSVToTable('_data/stock1.csv')
+     //    $('#CSVTable').CSVToTable('_data/stock1.csv')
+       $('#CSVTable').CSVToTable('_data/bookfile2.csv')
          .bind("loadComplete",formatTable);;      
          
          function formatTable() { 
