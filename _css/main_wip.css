@@ -1,23 +1,25 @@
+*{ margin-left: 10px;}
+
 h1, p{
-   font-family: Tahoma,Verdana,Arial,Geneva,Helvetica,sans-serif;  
-        width: 200px;
-}
-#DataTables_Table_0_length, .dataTables_filter {
-        font: 0.8em Tahoma,Verdana,Arial,Geneva,Helvetica,sans-serif;
-        border-collapse: collapse;
-        width: 90%;
-        margin: 10px;
-            display:inline;
+   font-family: Tahoma,Verdana,Arial,Geneva,Helvetica,sans-serif; 
+   margin: 10px;
+        
 }
 
-
+.paginate_enabled_previous,
+.paginate_enabled_next,
+.paging_two_button,
+.paginate_disabled_previous,
+footer {
+        font: 1em Tahoma,Verdana,Arial,Geneva,Helvetica,sans-serif;
+        display:inline;
+    }
 
 /* CSV Table Classes */
 TABLE.CSVTable {
         font: 0.8em Tahoma,Verdana,Arial,Geneva,Helvetica,sans-serif;
         border-collapse: collapse;
         width: 90%;
-        margin: 10px;
 }
 
 /* Header */
