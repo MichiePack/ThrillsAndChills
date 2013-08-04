@@ -1,11 +1,7 @@
-
-
-
-
-
 $(document).ready(function(){
     //alert("document ready");
     $("[href]").addClass("btn btn-large disabled");
+    $("#newsSection").accordion({ header: "h4" });
 });
 $("[href]").on("mouseleave", function(evt) {
     var $td = $(event.target);
