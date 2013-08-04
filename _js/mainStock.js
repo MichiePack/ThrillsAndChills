@@ -8,8 +8,8 @@
       function getData() {
          // ajax loader for csv
          ////$("#content").load("_data/pricelist.txt");
-         //$("#content").load("_data/stock.csv");
-        $("#content").load("_data/bookfileformichelle.notepad.csv);
+         $("#content").load("_data/stock.csv");
+        
         
         /* 
          // datatable plugin sample
@@ -23,9 +23,9 @@
       
       */
         // jquerycsvtotable https://code.google.com/p/jquerycsvtotable/
-         $('#CSVTable').CSVToTable('_data/bookfileformichelle.notepad.csv');
+       
          
-         //$('#CSVTable').CSVToTable('_data/stock1.csv');
+         $('#CSVTable').CSVToTable('_data/stock1.csv');
          ////$('#CSVTable').CSVToTable('_vendor/csvtotable/test.csv');
           }
       

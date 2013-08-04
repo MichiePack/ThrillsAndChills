@@ -1,34 +1,22 @@
 /**
  * @author Michelle Pack
  */
-      $("document").ready(function() {
-        getData();
-      });
+  
+$("document").ready(function() {
+    getData();
+});
 
-      function getData() {
-         // ajax loader for csv
-         //$("#content").load("_data/pricelist.txt");
-       //  $("#content").load("_data/stock.csv");
-       
-         // datatable plugin sample
-      
-      
-        // jquerycsvtotable https://code.google.com/p/jquerycsvtotable/
-   //      $('#CSVTable').CSVToTable('_data/stock1.csv');
-         //$('#CSVTable').CSVToTable('_vendor/csvtotable/test.csv');
-      
-         // $('#CSVTable').CSVToTable('_data/stock1.csv')
-         // .bind("loadComplete",function() { 
-            // $('#CSVTable').find('TABLE').dataTable();
-        // });;
-
-     //    $('#CSVTable').CSVToTable('_data/stock1.csv')
-       $('#CSVTable').CSVToTable('_data/bookfile2.csv')
-         .bind("loadComplete",formatTable);;      
-         
-         function formatTable() { 
-            $('#CSVTable').find('TABLE').dataTable();
-        }
-         
-     }
+function getData() {
+    // Ajax loader for csv
+    // jquerycsvtotable https://code.google.com/p/jquerycsvtotable/
+    
+    // $('#CSVTable').CSVToTable('_data/stock1.csv')  // working as per hosted version
+    $('#CSVTable').CSVToTable('_data/salesData1.01.csv')
+           .bind("loadComplete",formatTable);      
+     
+    function formatTable() { 
+    $('#CSVTable').find('TABLE').dataTable();
+    }
+     
+}
       
