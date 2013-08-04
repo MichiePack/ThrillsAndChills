@@ -24,7 +24,7 @@ $("[href]").on("mouseover", function(evt) {
     $td.removeClass("btn btn-large disabled").addClass("btn btn-large btn-primary disabled");
 });
 $(function() {
-    // create the image rotator
+    // create the image rotator.
     setInterval(rotateImages, 2000);
 });
 
