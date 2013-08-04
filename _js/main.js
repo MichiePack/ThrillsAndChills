@@ -3,19 +3,6 @@ $(document).ready(function(){
     $("[href]").addClass("btn btn-large disabled");
     $("#newsSection").accordion({ header: "h4" });
 });
-$("[href]").on("mouseleave", function(evt) {
-    var $td = $(event.target);
-    $td.removeClass("btn btn-large btn-primary disabled").addClass("btn btn-large disabled");
-});
-$("[href]").on("mouseover", function(evt) {
-    var $td = $(event.target);
-    $td.removeClass("btn btn-large disabled").addClass("btn btn-large btn-primary disabled");
-});
-$(function() {
-    // create the image rotator
-    setInterval("rotateImages()", 2000);
-});
-
 function rotateImages() {
     var oCurPhoto = $('#photoShow div.current');
     var oNxtPhoto = oCurPhoto.next();
@@ -28,6 +15,20 @@ function rotateImages() {
             oCurPhoto.removeClass('previous');
         });
 }
+$("[href]").on("mouseleave", function(evt) {
+    var $td = $(event.target);
+    $td.removeClass("btn btn-large btn-primary disabled").addClass("btn btn-large disabled");
+});
+$("[href]").on("mouseover", function(evt) {
+    var $td = $(event.target);
+    $td.removeClass("btn btn-large disabled").addClass("btn btn-large btn-primary disabled");
+});
+$(function() {
+    // create the image rotator
+    setInterval(rotateImages, 2000);
+});
+
+
 //$("#update").load("news.txt");
 
     
